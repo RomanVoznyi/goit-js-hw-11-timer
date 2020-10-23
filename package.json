@@ -3,19 +3,20 @@
   "version": "1.0.0",
   "description": "repository for hw11_3",
   "main": "postcss.config.js",
-  "scripts": {
-    "start": "webpack-dev-server --mode=development",
+  "scripts": {    
     "dev": "webpack --mode=development",
+    "postdev": "npm run server",
+    "server": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production --public-url/goit-js-hw-11-timer",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RomanVoznyy/goit-js-hw-11-timer.git"
   },
   "keywords": [],
-  "author": "YOUR_NAME <YOUR_EMAIL>",
+  "author": "RomanVoznyy <roman.voznyy.52@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RomanVoznyy/goit-js-hw-11-timer/issues"
